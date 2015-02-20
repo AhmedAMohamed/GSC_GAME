@@ -5,7 +5,7 @@ private var pos2:Vector2;
 private var speed:float;
 public var IsFirst:boolean;
 public var IsSecond:boolean;
-public var IsThird:boolean;
+public static var x_comp:float;
 
 function Start () {
   pos1 = transform.position;
@@ -13,16 +13,12 @@ function Start () {
 }
 
 function Update () {
+  x_comp = transform.position.x;
   if(IsFirst == true)
   {
     speed = 0.5;
   }
   if(IsSecond == true)
-  {
-    speed = 1;
-  }
-  
-  if(IsThird == true)
   {
     speed = 0.75;
   }

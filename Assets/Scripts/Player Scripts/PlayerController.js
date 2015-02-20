@@ -77,6 +77,11 @@ function OnTriggerEnter2D(other : Collider2D){
     elevatordoor = true;
     Destroy(other.gameObject.collider2D);
   }
+  
+  if(other.gameObject.tag == "MovingPlatform")
+  {
+    transform.position.x = SmallPlatformMove.x_comp;
+  }
 }
 
 function Jump(){
