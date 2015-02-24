@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 private var pos1:Vector2;
 private var pos2:Vector2;
